@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+        
+        <link rel="stylesheet" type="text/css" href="css/default.css">
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+                
+    </head>
+    <body>
+        
+        
+        <!-- ==================== HEADER ==================== -->
+               
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-2">
+                    <h1>SocialDevelop</h1>
+                </div>
+                <div class="col-md-6">
+                    <form method="POST" action="" class="search-form">
+                        <input type="search" placeholder="Search" name="input_search">
+                        <input type="submit" name="submit-search" value="">
+                    </form>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <ul>
+                        <#if (username??)>
+                        <li><a href="profilo"><i class="glyphicon glyphicon-user"></i> My Account</a></li>
+                            <li><a>|</a></li>
+                            <li><a><i class="glyphicon glyphicon-envelope"></i></a></li>
+                            <li><a>|</a></li>
+                            <li><a href="logout">Logout</a></li>
+                        <#else>
+                        <li><a href="login"><i class="glyphicon glyphicon-lock"></i> Login</a></li>
+                            <li><a>|</a></li>
+                            <li><a href="registrazione"><i class="glyphicon glyphicon-pencil"></i> Registrati</a></li>
+                        </#if>
+                    </ul>
+                </div>
+                
+                
+                
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+        
+        
+        
+        <!-- ==================== CONTENT ==================== -->
+        
+        <div class="container-fluid content">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <!-- ./row -->
+            
+            <div class="row">
+                <#include content_tpl>
+            </div>
+            <!-- ./row -->   
+        </div>
+        <!-- /.container-fluid -->
+        
+        
+        
+        
+        
+        <!-- ==================== FOOTER ==================== --> 
+        
+        <div class="container-fluid footer">
+            <div class="row">
+                <p>Copyright&copy;2017 - Ingegneria Del Web Project</p>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </body>
+</html>

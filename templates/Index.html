@@ -1,0 +1,19 @@
+<ul>
+                        <#if (username??)>
+                            <li><a><i class="glyphicon glyphicon-user"></i> My Account</a></li>
+                            <li><a>|</a></li>
+                            <li><a><i class="glyphicon glyphicon-envelope"></i></a></li>
+                            <li><a></a></li>
+                        <#else>
+                            <li><a data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-lock"></i> Login</a></li>
+                            <li><a>|</a></li>
+                            <li><a><i class="glyphicon glyphicon-pencil"></i> Registrati</a></li>
+                        </#if>
+                    </ul>
+
+<form method="POST" action="login">
+                    <input type="text" name="username" value="" placeholder="Username">
+                    <input type="password" name="password" value="" placeholder="Password">
+                    
+                    <input type="submit" name="login" value="Login">
+                </form>

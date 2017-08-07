@@ -1,0 +1,117 @@
+   
+<div class="col-md-2"></div>
+<!-- ./col-md-2 -->
+
+<div class="col-md-8">                    
+    <form method="POST" action="login" id="signup-form">
+        <div class="form-row form-header">
+            <h2>Crea il tuo profilo</h2>
+        </div>
+        <!-- ./form-row -->
+        
+        <div class="col-md-6 input-reg">
+            <label><i class="glyphicon glyphicon-user"></i></label>
+            <input type="text" name="nome" placeholder="Nome">
+        </div>
+        <!-- ./form-row -->
+        
+        <div class="col-md-6 input-reg">
+            <label><i class="glyphicon glyphicon-user"></i></label>
+            <input type="text" name="cognome" placeholder="Cognome">
+        </div>
+        <!-- ./form-row -->
+        
+        <div class="col-md-6 input-reg">
+            <label><i class="glyphicon glyphicon-user"></i></label>
+            <input type="text" name="username" placeholder="Username">
+        </div>
+        <!-- ./form-row -->
+        
+        <div class="col-md-6 input-reg">
+            <label><i class="glyphicon glyphicon-envelope"></i></label>
+            <input type="email" name="email" placeholder="Email">
+        </div>
+        <!-- ./form-row -->
+        
+        <div class="col-md-6 input-reg">
+            <label><i class="glyphicon glyphicon-lock"></i></label>
+            <input type="password" name="password" placeholder="Password">
+        </div>
+        <!-- ./form-row -->
+        
+        <div class="col-md-6 input-reg">
+            <label><i class="glyphicon glyphicon-calendar"></i></label>
+            <input type="text" name="dataDiNascita" placeholder="Data di nascita: aaaa/mm/gg">
+        </div>
+        <!-- ./form-row -->
+        
+        <div class="col-md-12">
+            <fieldset>
+                <legend>Le mie Skills</legend>    
+            </fieldset>
+            
+            <p><i class="glyphicon glyphicon-plus"></i> Aggiungi Skill</p>
+        </div>
+        <div class="form-row">
+            <input type="text" name="skill" placeholder="Nome skill">
+            <input type="number" name="livello" min="0" max="5" placeholder="Livello skill">
+            <input type="button" name="add-skill" value="aggiungi" onclick="myFunction()">
+        </div>
+        
+        <table id="tabella-skills">
+            <tr>
+                <th>Nome Skill</th>
+                <th>Liv Skill</th>
+            </tr>
+        </table>
+        <!-- ./col-md-12 --> 
+        
+        
+        <div class="col-md-12">
+            <fieldset>
+                <legend>Curriculum</legend>
+            </fieldset>
+        </div>
+        <!-- ./col-md-12 -->      
+        
+        
+        <!-- ./form-row -->
+        <div class="form-row">
+            <label for="file-input"><i class="fa fa-file-pdf-o"></i> <a>Carica file</a></label>
+            <input type="file" id="file-input" name="curriculumPdf">
+        </div>
+        <!-- ./form-row -->
+       
+        <div class="form-row">
+            <a onclick="textarea();"><i class="glyphicon glyphicon-pencil"></i> Scrivi il tuo curriculum</a>
+            <textarea cols="40" rows="10" id="textarea"></textarea>
+        </div>
+        <!-- ./form-row -->
+        
+        <div class="form-row">
+            <input type="submit" name="registrati" value="Registrati">
+        </div>
+        <!-- ./form-row -->
+    </form>
+</div>
+<!-- ./col-md-8 -->
+
+<div class="col-md-2"></div>
+<!-- ./col-md-2 -->    
+
+
+
+<script>
+function myFunction() {
+    
+    var nomeSkill = document.getElementById('nomeSkill').value;
+    
+    var tr = document.createElement("tr");
+    document.getElementById("tabella-skills").appendChild(tr);
+    var td = document.createElement("td");
+    
+    td.appendChild(nomeSkill);
+    
+    
+}
+</script>
