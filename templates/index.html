@@ -1,0 +1,66 @@
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="text-center">
+                        <i class="fa fa-code center-block"></i>
+                    </div>
+                    
+                    <h3 class="text-center">Crea progetto</h3>
+                    <p class="text-center">Crea il tuo progetto specificando i task e cercando gli sviluppatori per farlo</p>
+                    
+                    <button class="btn btn-secondary center-block">nuovo progetto <span class="fa fa-plus"></span></button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="text-center">
+                        <i class="fa fa-users center-block"></i>
+                    </div>
+                    
+                    <h3 class="text-center">Trova collaboratori</h3>
+                    <p class="text-center">Cerca sviluppatori in base al livello e alle skill di cui necessita il tuo progetto</p>
+                
+                    <form method="POST" action="" class="search-sviluppatore">
+                        <div class="form-group">
+                            <select>
+                                <option>seleziona skill</option>                                
+                            </select>
+                            
+                            <select>
+                                <option>Seleziona livello</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                            
+                            <button class="btn btn-secondary inline">Cerca <span class="fa fa-search"></span></button>
+                
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+
+<hr>
+
+<div class="row">
+    <div class="center-block search-block">
+        <form method="GET" action="" class="search">
+            <input type="text" name="cerca" placeholder="Cerca">
+            <button class="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+</div>
