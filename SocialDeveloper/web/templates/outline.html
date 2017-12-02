@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <!--bootstrap css-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet"> 
+        
+        	
+	<!-- il mio css -->
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <!-- start header -->
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">   
+                        <h2 class="logo"><span class="fa fa-cogs"> Social Developer</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ul class="navbar">
+                        <li><a href="index" class="fa fa-home"> Home</a></li>
+                        <li><a href="profilo" class="fa fa-user"> ${email}</a></li>
+                        <li><a class="fa fa-envelope"> Messaggi</a></li>
+                        <#if (email??)>
+                        <li class="pull-right"><a class="fa fa-sign-out" href="logout"> Logout</a></li>
+                        <#else>
+                        <li class="pull-right"><a href="signup" class="fa fa-pencil"> Sign Up</a></li>
+                        <li class="pull-right"><a href="login" class="fa fa-sign-in"> Login</a></li>
+                        </#if>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- contenuto -->
+        <div class="container-fluid">
+            <#include content_tpl>
+        </div>
+        
+        <!-- footer -->
+        <div class="container-fluid footer">
+            <p>Copyright&copy;2017 - Progetto sviluppato da Eugenio Mancini & Luca D'Orazio</p>
+        </div>
+        
+    </body>
+</html>

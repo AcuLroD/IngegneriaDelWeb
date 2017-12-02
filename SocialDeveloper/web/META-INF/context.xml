@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/SocialDeveloper">
+<Resource
+        name="jdbc/igw" 
+        type="javax.sql.DataSource"
+        auth="Container"
+        driverClassName="com.mysql.jdbc.Driver"
+        url="jdbc:mysql://localhost/igw"
+        username="root"
+        password=""
+        maxActive="10"
+        maxIdle="5"
+        maxWait="10000"
+    />
+</Context>

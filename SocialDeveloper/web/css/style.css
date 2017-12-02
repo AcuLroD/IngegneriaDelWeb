@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    background: url('http://www.disim.univaq.it/main/skins/aqua/img/main_bgr.png') repeat;
+}
+
+ul{
+    list-style: none none;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+.header{
+    background: linear-gradient(45deg, #54d400 48%, #1b1e21 48%);
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+label{
+    font-weight: normal;
+}
+
+.green{
+    background-color: #54d400;
+    color: #FFF;
+}
+
+.logo{
+    color: #FFF;
+    text-shadow: 1px 1px 1px #1b1e21;
+    padding: 2.5% 0 0 0;
+}
+
+ul.navbar{
+    padding: 2.5% 0 0 0;
+}
+
+ul.navbar li{
+    float: left;
+}
+
+ul.navbar li:hover{
+    border-bottom: 1px solid #54d400;
+    margin-bottom: -1px;
+}
+
+ul.navbar li a{
+    color: #FFF;
+    font-size: 16px;
+    display: block;
+    padding: 10px 15px;
+}
+
+ul.navbar li a:hover{
+   text-decoration: none;
+}
+
+.row{
+    margin: 0;
+    padding: 0;
+}
+
+.fa-code,
+.fa-users{
+    font-size: 4em;
+    margin: 5% 0;
+}
+
+.fa-plus{
+    font-weight: normal;
+    font-size: 0.8em;
+}
+
+p{
+    line-height: 2;
+}
+
+select{
+    border-radius: 3px;
+    padding: 1%;
+}
+
+.inline{
+    display: inline;
+    margin: 0;
+}
+
+.search-sviluppatore{
+    width: 100%;
+    margin: 0 15%;
+}
+
+.search-sviluppatore select{
+    margin: 0 2.5%;
+}
+
+.search-block{
+    display: block;
+    width: 40%;
+    margin: 5% 30%;
+}
+
+.search{
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    padding: 1% 0 1% 1%;
+    background-color: #FFF;
+}
+
+.search input[type=text]
+{
+    padding: 2.5%;
+    border: none;
+    outline: none;
+    width: 90%;
+}
+
+.search button{
+    border: none;
+    padding: 2%;
+    background-color: transparent;
+}
+
+.footer{
+    background-color: #222;
+    padding: 0;
+    margin: 0;
+}
+
+.footer p{
+    color: #FFF;
+    text-align: center;
+    padding: 2.5%;
+}
+
+.form-login{
+    border: 1px solid #222;
+    width: 30%;
+    margin: 5% 35%;
+}
+
+.form-login input{
+    border: none;
+}
+
+/*login form*/
+
+a {
+  color: #aaaaaa;
+  transition: all ease-in-out 200ms;
+}
+a:hover {
+  color: #333333;
+  text-decoration: none;
+}
+/*=== 3. Text Outside the Box ===*/
+.etc-login-form {
+  color: #919191;
+  padding: 10px 20px;
+}
+.etc-login-form p {
+  margin-bottom: 5px;
+}
+/*=== 4. Main Form ===*/
+.login-form-1 {
+  width: 30%;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 12.35% 35%;
+}
+.main-login-form {
+  position: relative;
+}
+.login-form-1 .form-control {
+  border: 0;
+  box-shadow: 0 0 0;
+  border-radius: 0;
+  background: transparent;
+  color: #555555;
+  padding: 7px 0;
+  font-weight: bold;
+  height:auto;
+  width: 90%;
+}
+.login-form-1 .form-control::-webkit-input-placeholder {
+  color: #999999;
+}
+.login-form-1 .form-control:-moz-placeholder,
+.login-form-1 .form-control::-moz-placeholder,
+.login-form-1 .form-control:-ms-input-placeholder {
+  color: #999999;
+}
+.login-form-1 .form-group {
+  margin-bottom: 0;
+  border-bottom: 1px solid #efefef;
+  padding-right: 20px;
+  position: relative;
+}
+.login-form-1 .form-group:last-child {
+  border-bottom: 0;
+}
+.login-group {
+  background: #ffffff;
+  color: #999999;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+.login-group-checkbox {
+  padding: 5px 0;
+}
+
+.form-group label{
+    float: left;
+    width: 100%;
+    padding: 8px 0;
+    text-align: left;
+}
+
+/*=== 5. Login Button ===*/
+.login-form-1 .login-button {
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  background: #ffffff;
+  color: #999999;
+  padding: 11px 0;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  border: 1px solid #efefef;
+  border-radius: 50%;
+  transition: all ease-in-out 500ms;
+  outline: none;
+}
+.login-form-1 .login-button:hover {
+  color: #555555;
+  transform: rotate(450deg);
+}
+.login-form-1 .login-button.clicked {
+  color: #555555;
+}
+.login-form-1 .login-button.clicked:hover {
+  transform: none;
+}
+.login-form-1 .login-button.clicked.success {
+  color: #2ecc71;
+}
+.login-form-1 .login-button.clicked.error {
+  color: #e74c3c;
+}
+
+/* end login form*/
+
+/* signup form*/
+label.form-invalid {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  display: block;
+  margin-top: -25px;
+  padding: 7px 9px;
+  background: #777777;
+  color: #ffffff;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 11px;
+}
+label.form-invalid:after {
+  top: 100%;
+  right: 10px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: transparent;
+  border-top-color: #777777;
+  border-width: 6px;
+}
+/*=== 7. Form - Main Message ===*/
+.login-form-main-message {
+  background: #ffffff;
+  color: #999999;
+  border-left: 3px solid transparent;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  height: 0;
+  padding: 0 20px 0 17px;
+  opacity: 0;
+  transition: all ease-in-out 200ms;
+}
+.login-form-main-message.show {
+  height: auto;
+  opacity: 1;
+  padding: 10px 20px 10px 17px;
+}
+.login-form-main-message.success {
+  border-left-color: #2ecc71;
+}
+.login-form-main-message.error {
+  border-left-color: #e74c3c;
+}
+
+/*end signup form*/
+
+.img-profilo{
+ position: relative;   
+}
+
+.img-profilo input{
+    display: none;
+}
+
+.img-profilo label{
+    font-weight: normal;
+    color: #54d400;
+    width: 100%;
+}
+.img-profilo label:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.normal{
+    font-size: 1em;
+}
+
+.user-main {
+    width: 90%;
+    margin: 5%;
+}
+
+.user-main tr td{
+   margin: 0.2%;
+   padding: 2%;
+   font-size: 18px;
+   background-color: #FFF;
+   border: 1px solid lightgrey;
+}
+
+.user-main tr td img{
+    width: 60px;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.user-main tr td h4{
+    margin: 10% 15%;
+}
+
+.dati-profilo{
+    background-color: #FFF;
+    margin: 2% 0;
+}
+
+.dati-profilo table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dati-profilo table tr td{
+    padding: 2%;
+}
+
+.dati-profilo h4{
+    padding: 2.5% 0 0 2.5%;
+}
+
+.dati-profilo p{
+    line-height: 2;
+    padding: 2%;
+    text-align: justify;
+}
+
+.form-modifica{
+    width: 60%;
+    margin: 5% 20%;
+}
+
+.center p{
+    text-align: center !important;
+}
+
+.dati-profilo h3{
+    margin-top: 2.5%;
+}
+
+.diamond{
+    font-size: 2.5em;
+    margin-top: 2.5%;
+}
+
+.tabella-skill th{
+    padding: 2%;
+}
+
+.normal{
+    font-size: 1em;
+}
+
+.close-task label{
+    float: left;
+    width: 42%;
+}
+
+table.partecipazioni td{
+    padding: 0.2%;
+}
+
+.dati-profilo{
+    border-radius: 7px;
+    box-shadow: 0px 0.5px 1px 0px grey;
+}
+
+.tabella-risultati th{
+    padding: 1% 2%;
+    background-color: #efefef;
+    text-align: center;
+}
+
+.tabella-risultati td{
+    text-align: center;
+}

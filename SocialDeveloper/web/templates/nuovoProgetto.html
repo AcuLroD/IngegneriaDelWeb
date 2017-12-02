@@ -1,0 +1,159 @@
+<div class='row'>
+    <div class="col-md-3">
+        <div class="row">
+            <div class="img-profilo">
+                <table class="user-main">
+                    <tr>
+                        <td>
+                            <div class="col-md-2"><img src="http://www.tbspa.it/wp-content/uploads/2013/05/social-varese-profilo.png"></div>
+                            <div class="col-md-10">
+                                <h4>Eugenio</h4>
+                            </div>
+                            
+                        </td>
+                    </tr>
+                </table>
+                <div class="row">
+                    <div class="col-md-3">
+                        
+                    </div>
+                    <div class="col-md-9">
+                        
+                    </div>
+                </div>
+                
+                <label for="file" class="text-center"><i class='fa fa-camera'></i> carica immagine</label>
+                <input type="file" id="file">
+            </div>
+        </div>
+        <div class="row">
+            <table class="user-main">
+                <tr>
+                    <td class="text-center"><i class="fa fa-user"></i></td>
+                    <td><a href="profilo">l mio profilo</a></td>
+                </tr>
+                <tr>
+                    <td class="text-center"><i class="fa fa-folder-o normal"></i></td>
+                    <td><a href="userProjects">I miei progetti</a></td>
+                </tr>
+                <tr>
+                    <td class="text-center"><i class="fa fa-handshake-o"></i></td>
+                    <td><a href="partecipazioni">Le mie partecipazioni</a></td>
+                </tr>
+                <tr>
+                    <td class="text-center"><i class="fa fa-diamond"></i></td>
+                    <td><a href="userSkills">Le mie skills</a></td>
+                </tr>
+                <tr>
+                    <td class="text-center"><i class="fa fa-refresh"></i></td>
+                    <td><a href="modificaProfilo">Aggiorna profilo</a></td>
+                </tr>
+                <tr>
+                    <td class="text-center"><i class="fa fa-code normal"></i></td>
+                    <td><a href="nuovoProgetto">Nuovo progetto</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="col-md-8">
+        
+        <div class="row dati-profilo text-center">
+            
+            <form method="POST" action="" class="form-modifica">
+                <div class="login-group">
+					<div class="form-group">
+						<label>Nome progetto</label>
+						<input type="text" class="form-control" name="nome_progetto" placeholder="Nome progetto">
+					</div>                                      
+                                        
+                                        <div class="form-group">
+						<label>Descrizione</label>
+                                                <textarea cols="80" rows="5"> </textarea>
+					</div>
+                                        <div class="form-group">
+                                            <label>Data inizio</label>
+						<input type="date" class="form-control" name="data_inizio" >
+					</div>
+                                    
+                                        <div class="form-group">
+                                            <label>Data fine</label>
+                                            <input type="date" class="form-control" name="data_fine" placeholder="">
+					</div>
+                    <div class='form-group'>
+                        <input type="submit" class="btn btn-secondary" value="crea progetto">
+                    </div>                      
+                </div>
+            </form>
+        </div>
+        
+        <!-- nuovo task -->
+        <div class="row dati-profilo text-center">
+            <form method="POST" action="" class="form-modifica">
+                <div class="login-group">
+                    <div class="form-group">
+                        <select>
+                            <option>Seleziona progetto</option>
+                            <option value="">progetto</option>
+                        </select>
+                    </div>
+					<div class="form-group">
+						<label>Nome task</label>
+						<input type="text" class="form-control" name="nome_progetto" placeholder="Nome task">
+					</div>                                      
+                                        
+                                        <div class="form-group">
+						<label>Descrizione</label>
+                                                <textarea cols="80" rows="5"> </textarea>
+					</div>
+                                        <div class="form-group">
+                                            <label>Data inizio</label>
+						<input type="date" class="form-control" name="data_inizio" >
+					</div>
+                                    
+                                        <div class="form-group">
+                                            <label>Data fine</label>
+                                            <input type="date" class="form-control" name="data_fine" placeholder="">
+					</div>
+                    <div class='form-group'>
+                        <input type="submit" class="btn btn-secondary" value="crea task">
+                    </div>                      
+                </div>
+            </form>
+        </div>
+        
+        <!-- skill task -->
+        <div class="row dati-profilo text-center">
+            <form method="POST" action="" class="form-modifica">
+                <div class="login-group">
+                    <div class="form-group">
+                        <h3>Aggiungi le skill ai relativi task</h3>
+                    </div>
+                        
+                    	<div class="form-group"><select>
+                            <option>Seleziona task</option>
+                            <option value="">task 1</option>
+                        </select>
+                                            <select>
+                                                <option>Seleziona skill</option>
+                                                <option value="">Css</option>
+                                            </select>
+                                            <select>
+                                                <option>Livello</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                            </select>
+                                            <input type="submit" class="btn btn-secondary" value="Aggiungi skill">
+					</div>                                                         
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
