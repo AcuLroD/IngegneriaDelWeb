@@ -59,9 +59,7 @@ public class modificaProfilo extends SocialDevelopBaseController {
                 svi.setEmail(request.getParameter("email"));
                 
                             
-//Get difference between years
-              
-request.setAttribute("biografia", svi.getBiografia());
+                request.setAttribute("biografia", svi.getBiografia());
                 request.setAttribute("nome", svi.getNome());
                 request.setAttribute("cognome", svi.getCognome());
                 request.setAttribute("email", svi.getEmail());
