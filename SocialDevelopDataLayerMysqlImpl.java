@@ -84,7 +84,7 @@ public class SocialDevelopDataLayerMysqlImpl extends DataLayerMysqlImpl implemen
             dSkill = connection.prepareStatement("DELETE FROM skill WHERE id=?");
             
             iSviluppatore = connection.prepareStatement("INSERT INTO sviluppatore(email,password,nome,cognome,biografia,id_curriculum,id_foto) VALUES (?,?,?,?,?,?,?)", Statement.RETURN_GENERATED_KEYS);
-            uSviluppatore = connection.prepareStatement("UPDATE sviluppatore SET email=?,nome=?,cognome=?,biografia=?, id_curriculum=?,id_foto=? WHERE id=?");
+            uSviluppatore = connection.prepareStatement("UPDATE sviluppatore SET email=?,nome=?,cognome=?,biografia=? WHERE email=?");
             dSviluppatore = connection.prepareStatement("DELETE FROM sviluppatore WHERE id=?");
             
             
@@ -712,10 +712,9 @@ public class SocialDevelopDataLayerMysqlImpl extends DataLayerMysqlImpl implemen
            sSviluppatoreByEmail.setString(1, email);
             try(
                 ResultSet rs = sSviluppatoreByEmail.executeQuery()){
-                  System.out.println("sono fuori if");
+                  
                     if(rs.next())
                     {
-                      System.out.println("sono dentro if");
                         SviluppatoreImpl a = new SviluppatoreImpl(this);
                         a.setId(rs.getInt("id"));
                         a.setNome(rs.getString("nome"));
@@ -952,7 +951,7 @@ public class SocialDevelopDataLayerMysqlImpl extends DataLayerMysqlImpl implemen
     public void storeSviluppatore(Sviluppatore sviluppatore) throws DataLayerException {
         int key = sviluppatore.getId();
         try {
-
+            System.out.println(sviluppatore.getId()+"   id");
             if (key > 0) {
                 
                 uSviluppatore.setString(1, sviluppatore.getEmail());
@@ -960,6 +959,7 @@ public class SocialDevelopDataLayerMysqlImpl extends DataLayerMysqlImpl implemen
                 uSviluppatore.setString(2, sviluppatore.getNome());
                 uSviluppatore.setString(3, sviluppatore.getCognome());
                 uSviluppatore.setString(4, sviluppatore.getBiografia());
+                uSviluppatore.setString(5, sviluppatore.getEmail());
                 /*if(sviluppatore.getId_curriculum() != 0) {
                     uSviluppatore.setInt(4, sviluppatore.getId_curriculum());
                 } else {
